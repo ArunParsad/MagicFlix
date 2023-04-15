@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { RootLayout, HomeRoute, SearchRoute } from './routes'
+import './index.css'
 const router = createBrowserRouter([
   {
     element: <RootLayout />,
