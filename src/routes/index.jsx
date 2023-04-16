@@ -1,3 +1,5 @@
 export { default as HomeRoute } from './HomeRoute'
 export { default as SearchRoute } from './SearchRoute'
 export { default as RootLayout } from './Root'
+export { default as MoviesRoute } from './MoviesRoute'
+export { default as ShowsRoute } from './ShowsRoute'

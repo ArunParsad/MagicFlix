@@ -1,7 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { RootLayout, HomeRoute, SearchRoute } from './routes'
+import {
+  RootLayout,
+  HomeRoute,
+  SearchRoute,
+  MoviesRoute,
+  ShowsRoute,
+} from './routes'
 import './index.css'
 const router = createBrowserRouter([
   {
@@ -9,11 +15,19 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <h1>Home</h1>,
+        element: <HomeRoute />,
       },
       {
         path: '/search',
-        element: <h1>Search</h1>,
+        element: <SearchRoute />,
+      },
+      {
+        path: '/movies',
+        element: <MoviesRoute />,
+      },
+      {
+        path: '/shows',
+        element: <ShowsRoute />,
       },
     ],
   },

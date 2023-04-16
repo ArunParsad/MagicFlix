@@ -4,8 +4,12 @@ import Navbar from '../components/Navbar'
 const Root = () => {
   return (
     <>
-      <Navbar />
-      <Outlet />
+      <section className='grid grid-cols-12'>
+        <Navbar />
+        <div className='col-start-2 ml-12 col-end-[-1]'>
+          <Outlet />
+        </div>
+      </section>
     </>
   )
 }
